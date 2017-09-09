@@ -1,0 +1,39 @@
+{
+// 扩展信息
+"name": "__MSG_extName__",
+"version": "1.0",
+"manifest_version": 2,
+"description": "__MSG_extDescription__",
+// 默认设置
+"default_locale": "zh_CN",
+"browser_action": {
+	"default_icon": 
+	{
+		"16":"16.png",
+		"48":"48.png",
+		"128":"128.png"
+	},
+	//弹出页面设置
+	"default_popup": "Main.html",
+	"default_title": "__MSG_extShortName__"
+},
+//图标设置
+"icons": 
+	{
+		"16":"16.png",
+		"48":"48.png",
+		"128":"128.png"
+	},
+//权限设置
+"permissions": 
+	[
+		"alarms", 
+		"contextMenus",
+		"cookies",
+		"storage", 
+		"tabs", 
+		"webRequest", 
+		"webRequestBlocking",
+		"http://*.mcmod.cn/" 
+	]
+}
