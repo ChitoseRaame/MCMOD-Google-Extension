@@ -1,4 +1,5 @@
 # MCMOD-Google-Extension
+##已经在Chrome拓展商店上架！
 MCMOD百科のChorme拓展，提供了一些微不足道的小功能。
 
 ### 目前提供的功能有：
