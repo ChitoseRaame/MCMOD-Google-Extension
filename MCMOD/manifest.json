@@ -1,8 +1,8 @@
 {
   "manifest_version": 3,
-  "name": "MCMOD.cn 快捷方式",
+  "name": "MCMOD.cn",
   "version": "2.0",
-  "description": "MCMOD.cn 网站的快捷方式，提供快速访问主站、论坛、找服玩、整合包和搜索功能",
+  "description": "MCMOD.cn，提供快速访问主站、论坛、找服玩、整合包和搜索功能",
   "icons": {
     "16": "icons/icon16.png",
     "48": "icons/icon48.png",
