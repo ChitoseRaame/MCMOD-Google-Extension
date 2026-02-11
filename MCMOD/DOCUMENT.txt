@@ -1,0 +1,61 @@
+MCMOD.cn Chrome 插件需求
+
+基本信息
+- 插件用途：MCMOD.cn 网站的快捷方式
+- 插件图标：从 https://www.mcmod.cn/images/favicon.ico 转换为 PNG 格式（icon16.png, icon48.png, icon128.png）
+
+悬浮窗口功能
+
+导航按钮
+1. 前往百科主站 - 点击跳转到 https://www.mcmod.cn/
+2. 前往百科论坛 - 点击跳转到 https://bbs.mcmod.cn/
+3. 前往找服玩 - 点击跳转到 https://play.mcmod.cn/
+4. 查找整合包 - 点击跳转到 https://www.mcmod.cn/modpack.html
+
+搜索功能
+- 输入框配合放大镜按钮（🔍）
+- 按下回车或点击按钮进行搜索，跳转到 https://search.mcmod.cn/s?key={param}
+- 关键词进行 URL 编码
+
+外部链接
+- 右下角显示 Bilibili 图标：https://i0.hdslb.com/bfs/static/jinkela/long/gif/loading-blue.gif
+- 点击跳转到 https://space.bilibili.com/438147311
+
+布局与样式
+
+按钮布局
+- 四个导航按钮采用 2×2 网格布局
+- 按钮尺寸：150px × 50px
+- 按钮间距：30px（上下左右）
+- 搜索输入框位于底部，占满整个宽度
+- 搜索容器下边距：10px
+
+悬浮窗口
+- 背景渐变：从上方的 #86C155 到下方的 #58B6D8
+- 窗口尺寸：380px × 280px
+- 内边距：30px（所有方向）
+
+按钮样式
+- 白色背景，12px 圆角
+- 阴影效果
+- 点击时触发水波纹动画（覆盖整个按钮）
+- 动画播放完成后跳转到目标页面
+
+搜索动画
+- 蓝色竖线从左向右移动
+- 左侧带有半透明渐变尾巴（长度 80px）
+- 进度线高度：44px，位于搜索输入框内部（带有圆角遮罩）
+- 动画播放完成后跳转到搜索页面
+
+图标位置
+- Bilibili 图标位于右下角
+- 距离边缘：5px
+
+技术实现
+- Manifest V3：符合最新 Chrome 扩展要求
+- 文件结构：
+  - manifest.json - 扩展配置
+  - popup.html - HTML 结构
+  - popup.css - 样式定义
+  - popup.js - 交互逻辑
+  - icons/ - 图标文件（icon16.png, icon48.png, icon128.png）

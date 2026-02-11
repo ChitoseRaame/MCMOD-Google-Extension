@@ -1,39 +1,20 @@
 {
-// 扩展信息
-"name": "__MSG_extName__",
-"version": "1.0",
-"manifest_version": 2,
-"description": "__MSG_extDescription__",
-// 默认设置
-"default_locale": "zh_CN",
-"browser_action": {
-	"default_icon": 
-	{
-		"16":"16.png",
-		"48":"48.png",
-		"128":"128.png"
-	},
-	//弹出页面设置
-	"default_popup": "Main.html",
-	"default_title": "__MSG_extShortName__"
-},
-//图标设置
-"icons": 
-	{
-		"16":"16.png",
-		"48":"48.png",
-		"128":"128.png"
-	},
-//权限设置
-"permissions": 
-	[
-		"alarms", 
-		"contextMenus",
-		"cookies",
-		"storage", 
-		"tabs", 
-		"webRequest", 
-		"webRequestBlocking",
-		"http://*.mcmod.cn/" 
-	]
+  "manifest_version": 3,
+  "name": "MCMOD.cn 快捷方式",
+  "version": "2.0",
+  "description": "MCMOD.cn 网站的快捷方式，提供快速访问主站、论坛、找服玩、整合包和搜索功能",
+  "icons": {
+    "16": "icons/icon16.png",
+    "48": "icons/icon48.png",
+    "128": "icons/icon128.png"
+  },
+  "action": {
+    "default_popup": "popup.html",
+    "default_icon": {
+      "16": "icons/icon16.png",
+      "48": "icons/icon48.png",
+      "128": "icons/icon128.png"
+    }
+  },
+  "permissions": []
 }
